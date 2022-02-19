@@ -16,7 +16,7 @@
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"helloShoplive\": () => (/* binding */ helloShoplive)\n/* harmony export */ });\nfunction helloShoplive() {\n    console.log('샵라이브 모듈 파일 생성');    \n}\n\n\n\n//# sourceURL=webpack://inf-webpack/./src/shoplive.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"helloShoplive\": () => (/* binding */ helloShoplive)\n/* harmony export */ });\nfunction helloShoplive() {\n    alert('샵라이브 모듈 파일 생성');    \n}\n\n\n\n//# sourceURL=webpack://inf-webpack/./src/shoplive.js?");
 
 /***/ })
 

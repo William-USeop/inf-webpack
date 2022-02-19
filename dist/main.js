@@ -16,7 +16,7 @@
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _math_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./math.js */ \"./src/math.js\");\n/* harmony import */ var _shoplive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./shoplive.js */ \"./src/shoplive.js\");\n\n\n\n\nconsole.log((0,_math_js__WEBPACK_IMPORTED_MODULE_0__.sum)(1,2));\n\n// TODO: shoplive.js 파일 번들링 테스트\n(0,_shoplive_js__WEBPACK_IMPORTED_MODULE_1__.helloShoplive)();\n\n//# sourceURL=webpack://inf-webpack/./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _math_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./math.js */ \"./src/math.js\");\n/* harmony import */ var _shoplive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./shoplive.js */ \"./src/shoplive.js\");\n\n\n\n\nalert((0,_math_js__WEBPACK_IMPORTED_MODULE_0__.sum)(1,2));\n\n// TODO: shoplive.js 파일 번들링 테스트\n(0,_shoplive_js__WEBPACK_IMPORTED_MODULE_1__.helloShoplive)();\n\n//# sourceURL=webpack://inf-webpack/./src/app.js?");
 
 /***/ }),
 
@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"helloShoplive\": () => (/* binding */ helloShoplive)\n/* harmony export */ });\nfunction helloShoplive() {\n    console.log('샵라이브 모듈 파일 생성');    \n}\n\n\n\n//# sourceURL=webpack://inf-webpack/./src/shoplive.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"helloShoplive\": () => (/* binding */ helloShoplive)\n/* harmony export */ });\nfunction helloShoplive() {\n    alert('샵라이브 모듈 파일 생성');    \n}\n\n\n\n//# sourceURL=webpack://inf-webpack/./src/shoplive.js?");
 
 /***/ })
 
