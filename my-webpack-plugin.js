@@ -18,6 +18,7 @@ class MyWebpackPlugin{
                  '*/',
             ].join('\n');
             // 소스 내용 상단에 위에 banner 내용이 추가
+            // main.js 상단에 banner에 작성된 내용이 확인가능
             return banner+'\n\n'+source;
         }
           callback()

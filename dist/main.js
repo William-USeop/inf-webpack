@@ -1,8 +1,12 @@
-/**
-* BannerPlugin이 처리한 결과
-* Build Date : 2022-02-20
-*/
-
+/*!
+ * 
+ *            Build Date : Sun Feb 20 2022 14:50:03 GMT+0900 (대한민국 표준시)
+ *            Commit Version : 56dfc08
+ * 
+ *            Author : Son William
+ * 
+ *            
+ */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
