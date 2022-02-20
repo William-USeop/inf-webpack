@@ -66,6 +66,7 @@ module.exports={
             removeComments : true, 
         } : false
        }),
+       new CleanWebpackPlugin(),
        ...(process.env.NODE_ENV === "production"
        ? [new MiniCssExtractPlugin({ filename: `[name].css` })]
        : []),
