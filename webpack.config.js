@@ -8,8 +8,9 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports={
     mode : 'development',
     entry : {
-        main : './src/app.js',
-        shoplive : './src/shoplive.js'        
+        //main : './src/app.js',
+        main : './app.js',
+        //shoplive : './src/shoplive.js'        
     },
     output:{
         path: path.resolve('./dist'),
@@ -35,6 +36,11 @@ module.exports={
                   //2kb이상일 경우 file-loader
                   limit:20000, 
                 }
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: "babel-loader", // 바벨 로더를 추가한다
             }
         ]
     },
