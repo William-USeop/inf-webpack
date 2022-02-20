@@ -3,6 +3,8 @@ const webpack = require('webpack');
 const childProcess = require('child_process');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 module.exports={
     mode : 'development',
     entry : {
@@ -18,8 +20,10 @@ module.exports={
             {
                 test:/\.css$/,
                 use:[
-                    'style-loader',
-                    'css-loader'
+                    process.env.NODE_ENV === "production"
+                    ? MiniCssExtractPlugin.loader // 프로덕션 환경
+                    : "style-loader", // 개발 환경
+                  "css-loader",
                 ]
             },
             {
@@ -62,6 +66,8 @@ module.exports={
             removeComments : true, 
         } : false
        }),
-       new CleanWebpackPlugin()
+       ...(process.env.NODE_ENV === "production"
+       ? [new MiniCssExtractPlugin({ filename: `[name].css` })]
+       : []),
     ]
 }

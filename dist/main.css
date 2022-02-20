@@ -1,0 +1,15 @@
+/*!
+ * 
+ *            Build Date : Sun Feb 20 2022 18:15:03 GMT+0900 (대한민국 표준시)
+ *            Commit Version : 82120aa
+ * 
+ *            Author : Son William
+ * 
+ *            
+ */
+body{
+    /* background-color: green; */
+    /* url의 경우 file-loader가 있어야한다
+    라고하지만 버젼 없데이트되면서 없어도 되는듯 하다 */
+    background-image: url(bg.png?5af0af42f49426cc73b0e7b3d7d2eb14);
+}
