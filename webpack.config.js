@@ -2,8 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const childProcess = require('child_process');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
-
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports={
     mode : 'development',
     entry : {
@@ -27,9 +26,10 @@ module.exports={
                 test: /\.(png|jpg|jpeg|gif|svg)$/,
                 loader: 'url-loader',
                 options: {
-                  publicPath: './dist/',
+                  //publicPath: './dist/',
                   name: '[name].[ext]?[hash]',
-                  limit:20000, //2kb
+                  //2kb이상일 경우 file-loader
+                  limit:20000, 
                 }
             }
         ]
@@ -50,7 +50,18 @@ module.exports={
            
        }),
        new HtmlWebpackPlugin({
-           template: './src/index.html'
-       })
+           template: './src/index.html',
+           templateParameters: { // 템플릿에 주입할 파라매터 변수 지정
+            env: process.env.NODE_ENV === 'development' ? '(개발용)' : '일반',          
+          },
+          // 환경이 env 운영일때만 적용
+          minify : process.env.NODE_ENV==='production'?{
+            // 빈칸 제거
+            collapseWhitespace : true,
+            // 주석을 제거
+            removeComments : true, 
+        } : false
+       }),
+       new CleanWebpackPlugin()
     ]
 }
