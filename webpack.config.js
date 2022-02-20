@@ -1,6 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const childProcess = require('child_process');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 module.exports={
     mode : 'development',
@@ -40,6 +42,15 @@ module.exports={
            Author : ${childProcess.execSync('git config user.name')}
            `
            
+       }),
+       new webpack.DefinePlugin({
+           //전역변수 TWO로 접근하여 어디서든 콘솔로 확인 가능하다.
+           TWO: JSON.stringify('1+1'),
+           'api.domain':JSON.stringify('http://dev.api.domain.com')
+           
+       }),
+       new HtmlWebpackPlugin({
+           template: './src/index.html'
        })
     ]
 }

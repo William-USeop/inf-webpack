@@ -11,3 +11,6 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 // TODO: shoplive.js 파일 번들링 테스트
 helloShoplive();
+
+console.log(TWO);
+console.log(api.domain);

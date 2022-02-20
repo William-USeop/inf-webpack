@@ -1,7 +1,7 @@
 /*!
  * 
- *            Build Date : Sun Feb 20 2022 14:50:03 GMT+0900 (대한민국 표준시)
- *            Commit Version : 56dfc08
+ *            Build Date : Sun Feb 20 2022 14:58:42 GMT+0900 (대한민국 표준시)
+ *            Commit Version : 4259d78
  * 
  *            Author : Son William
  * 
@@ -162,7 +162,7 @@ eval("var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtim
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.css */ \"./src/app.css\");\n/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_app_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _math_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./math.js */ \"./src/math.js\");\n/* harmony import */ var _shoplive_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shoplive.js */ \"./src/shoplive.js\");\n/* harmony import */ var _nyancat_jpeg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./nyancat.jpeg */ \"./src/nyancat.jpeg\");\n\n\n\n\n\n\nconsole.log(Object(_math_js__WEBPACK_IMPORTED_MODULE_1__[\"sum\"])(1,2));\ndocument.addEventListener('DOMContentLoaded',()=>{\n    document.body.innerHTML=`<img src=\"${_nyancat_jpeg__WEBPACK_IMPORTED_MODULE_3__[\"default\"]}\" />`\n})\n\n// TODO: shoplive.js 파일 번들링 테스트\nObject(_shoplive_js__WEBPACK_IMPORTED_MODULE_2__[\"helloShoplive\"])();\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.css */ \"./src/app.css\");\n/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_app_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _math_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./math.js */ \"./src/math.js\");\n/* harmony import */ var _shoplive_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shoplive.js */ \"./src/shoplive.js\");\n/* harmony import */ var _nyancat_jpeg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./nyancat.jpeg */ \"./src/nyancat.jpeg\");\n\n\n\n\n\n\nconsole.log(Object(_math_js__WEBPACK_IMPORTED_MODULE_1__[\"sum\"])(1,2));\ndocument.addEventListener('DOMContentLoaded',()=>{\n    document.body.innerHTML=`<img src=\"${_nyancat_jpeg__WEBPACK_IMPORTED_MODULE_3__[\"default\"]}\" />`\n})\n\n// TODO: shoplive.js 파일 번들링 테스트\nObject(_shoplive_js__WEBPACK_IMPORTED_MODULE_2__[\"helloShoplive\"])();\n\nconsole.log(\"1+1\");\nconsole.log(\"http://dev.api.domain.com\");\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
