@@ -1,3 +1,8 @@
+/**
+* BannerPlugin이 처리한 결과
+* Build Date : 2022-02-20
+*/
+
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
